@@ -1,0 +1,181 @@
+/* [ font eksternal ] */
+@font-face {
+    src: url('../font/Poppins-Regular.ttf');
+    font-family: Poppins;
+}
+@font-face {
+    src: url('../font/JlsspacegothicRnc-n2zY.otf');
+    font-family: JlsspacegothicRnc-n2zY;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* [ variabel css ] */
+:root {
+
+    --first-color-black: #000;
+    /* [ text color ] */
+    --text-color-black: #000;
+    --text-color-white: #ffffff;
+    /* [ background color ] */
+    --body-color-dark-gray: #A9A9A9;
+    --body-color-black: #040700;
+    --body-color-lawn-green: #7CFC00;
+    --body-color-light-green: #90EE90;
+    --body-color-lime-green: #32CD32;
+    --body-color-dark-green: #006400;
+    --body-color-yellow-green: #9ACD32;
+    --body-color-green-yellow: #ADFF2F;
+    --body-color-dark-slate-gray: #2F4F4F;
+    --body-color-white: #ffffff;
+    --body-color-dark: #00021B;
+    --body-color-blue: #00C5FF;
+    /* [ text font ] */
+    --text-font: Poppins;
+    --text-font-jls: JlsspacegothicRnc-n2zY;
+    /* [ font size ] */
+    --font-size-default: 1em;
+    --font-size-header: 1.5em;
+    --font-size-min: 0.8em;
+    --font-weight-tipis: 100;
+    /* [ border color ] */
+    --border-color-white: #ffffff;
+    --border-color-dark-gray: #A9A9A9;
+    --border-color-lime-green: #32CD32;
+    --border-color-abu-abu: #ccc;
+    --border-color-blue: #00C5FF;
+}
+
+
+/* [ reset css ] */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* style body */
+body {
+    background-color: var(--body-color-black);
+    font-family: var(--text-font);
+    color: var(--text-color);
+}
+
+
+/* halaman login */
+.__login {
+    background-color: var(--body-color-dark);
+    border-radius: 10px;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    width: 350px;
+    padding: 50px;
+}
+@media screen and (max-width: 576px) {
+    .__login {
+        width: 270px;
+        padding: 30px;
+    }
+}
+
+
+/* style halaman login + registrasi */
+input[type='text'], input[type='password'] {
+    border-radius: 30px;
+    width: 70%;
+    padding: 5px 20px;
+    outline: none;
+    border: var(--body-color-dark);
+    margin-top: 10px;
+    transition: 0.3s;
+    background: none;
+    border: 1px solid var(--border-color-blue);
+    color: var(--text-color-white);
+    font-family: var(--text-font);
+    padding-left: 35px;
+}
+input[type='text']:hover, input[type='password']:hover {
+    border: 1px solid var(--border-color-lime-green);
+    width: 80%;
+}
+@media screen and (max-width: 576px) {
+    input[type='text'], input[type='password'] {
+        width: 60%;
+    }
+    input[type='text']:hover, input[type='password']:hover {
+        width: 70%;
+    }
+}
+input[type='submit'] {
+    width: 30%;
+    border-radius: 30px;
+    padding: 5px 20px;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    background: var(--body-color-blue);
+    color: var(--text-color-black);
+    transition: 0.3s;
+    font-family: var(--text-font);
+}
+input[type='submit']:hover {
+    background: var(--body-color-lime-green);
+}
+@media screen and (max-width: 576px) {
+    input[type='submit'] {
+        width: 40%;
+    }
+}
+p {
+    color: var(--text-color-white);
+    font-size: var(--font-size-min);
+}
+a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: var(--text-color-white);
+    display: inline-block;
+    transition: 0.3s;
+}
+a:hover {
+    text-decoration: underline;
+}
+h1 {
+    color: var(--text-color-white);
+    font-weight: var(--font-weight-tipis);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+i {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.fa-send {
+    color: var(--text-color-black);
+}
+
+
+/* halaman registrasi */
+.__register {
+    background-color: var(--body-color-dark);
+    border-radius: 10px;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    width: 350px;
+    padding: 50px;
+}
+@media screen and (max-width: 576px) {
+    .__register {
+        width: 270px;
+        padding: 30px;
+    }
+}
